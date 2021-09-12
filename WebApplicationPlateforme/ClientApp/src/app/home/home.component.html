@@ -1,0 +1,78 @@
+<app-nav-menu></app-nav-menu>
+<!-- Page Content -->
+<div class="content">
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <app-side-menu></app-side-menu>
+    </div>
+    <style>
+      .item {
+        position: relative;
+        padding-top: 20px;
+        display: inline-block;
+      }
+
+      .notify-badge {
+        position: absolute;
+        left: 5px;
+        top: -20px;
+        background: red;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color: white;
+        padding: 5px 10px;
+        font-size: 15px;
+
+      }
+    </style>
+    <div class="col-md-9 col-sm-8">
+      <section class="main-content text-center">
+        <div class="container">
+          <div class="row">
+
+
+            <div class="col-sm-6 col-md-3 my-4">
+              <div class="link-box">
+                <a [routerLink]="['/filesorg-menu']">
+                  <span class="d-block">
+                    <i class="fa fa-users-cog fa-3x"></i>
+                  </span>
+                  <h4>خدماتي </h4>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 my-4">
+              <div class="link-box">
+                <a [routerLink]="['/main-services-page']">
+                  <span class="d-block">
+                    <i class="fa fa-user-secret fa-3x"></i>
+                  </span>
+                  <h4>استعلاماتي </h4>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 my-4">
+              <div class="link-box">
+                <a [routerLink]="['/alertsrh']">
+                  <span class="d-block">
+                    <i class="fa fa-user-secret fa-3x"></i>
+                  </span>
+                  <h4> شؤون الموظفين</h4>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    </div><!-- End col-9 -->
+  </div>
+
+</div>
+<!-- Footer -->
+<footer class="text-center">
+ <p>كل الحقوق محفوظة لمؤسسة مواهب الخليج  <img src="assets/images/logo000.png" style="width:40px;height:40px;"> </p>
+</footer>
